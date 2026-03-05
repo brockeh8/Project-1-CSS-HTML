@@ -12,7 +12,10 @@
   Introduces the recipe-book theme and guides users into the browsing experience.
 * **Recipes List (`recipes.html`)**
   Displays recipe cards for visual browsing and selection.
-* tbd
+* **Flavors List (`flavors.html`)**
+  Displays a flavor profile and guide
+* **Details List (`details.html`)**
+  Gives a detailed list of everything needed for specific recipes 
 
 ---
 
