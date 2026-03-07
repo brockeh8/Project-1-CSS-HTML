@@ -3,19 +3,44 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MellowFood</title>
+  <title>MellowFood | Home</title>
   <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-  <main class="container" style="padding:40px 24px;">
-    <h1>MellowFood</h1>
-    <p>Start.</p>
-    <ul>
-      <!--example -->
-      <!-- <li><a href="recipes.html">Recipes</a></li>
-      <li><a href="recipe-detail.html">Recipe Detail</a></li>
-      <li><a href="flavor-guide.html">Flavor Guide</a></li> -->
-    </ul>
-  </main>
+
+<header class="site-header">
+  <div class="container navbar">
+    <a class="brand" href="index.html" aria-label="MellowFood home">
+      <div class="brand-mark">MF</div>
+      <span>MellowFood</span>
+    </a>
+
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="recipes.html">Recipes</a>
+      <a href="details.html">Details</a>
+      <a href="flavors.html">Flavors</a>
+    </nav>
+
+    <a class="btn secondary" href="recipes.html">Browse</a>
+  </div>
+</header>
+
+<main>
+  <section class="section">
+    <div class="container card" style="padding:24px;">
+      <div class="kicker">starter</div>
+      <h1 style="margin:10px 0 8px;">MellowFood</h1>
+      <p style="margin:0; color: var(--muted);">
+        Our website
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">© 2026 MellowFood</div>
+</footer>
+
 </body>
 </html>
