@@ -35,3 +35,68 @@ img{ max-width: 100%; display: block; }
   outline: 3px solid #000;
   outline-offset: 3px;
 }
+
+.site-header{
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(251,250,247,.92);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+}
+
+.navbar{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap: 18px;
+  padding: 14px 0;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap: 10px;
+  font-weight: 800;
+  letter-spacing: .2px;
+}
+
+.brand-mark{
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  border: 2px solid var(--ink);
+  display:grid;
+  place-items:center;
+  font-size: 14px;
+}
+
+.nav-links{
+  display:flex;
+  flex-wrap:wrap;
+  gap: 10px;
+}
+
+.nav-links a{
+  padding: 8px 10px;
+  border-radius: 10px;
+  color: var(--muted);
+  transition: background .2s ease, transform .2s ease;
+}
+
+.nav-links a:hover{
+  background: #f1ede6;
+  transform: translateY(-1px);
+}
+
+.nav-links a[aria-current="page"]{
+  background: #f1ede6;
+  color: var(--ink);
+}
+
+.site-footer{
+  border-top: 1px solid var(--line);
+  padding: 24px 0;
+  color: var(--muted);
+  font-size: 14px;
+}
