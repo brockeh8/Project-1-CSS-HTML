@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MellowFood | Orange Zest Cake</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container navbar">
+    <a class="brand" href="index.html" aria-label="MellowFood home">
+      <div class="brand-mark">MF</div>
+      <span>MellowFood</span>
+    </a>
+
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="recipes.html">Recipes</a>
+      <a href="details.html" aria-current="page">Details</a>
+      <a href="flavors.html">Flavors</a>
+    </nav>
+
+    <a class="btn secondary" href="recipes.html">Back to Recipes</a>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <header class="detail-head">
+      <div class="kicker">recipe page</div>
+      <h1 class="detail-title">Orange Zest Cake</h1>
+
+      <div class="detail-tags">
+        <span class="tag">Citrus</span>
+        <span class="tag ghost">Dessert</span>
+        <span class="tag ghost">55 min</span>
+      </div>
+
+      <p class="detail-story">
+        This cake leans into citrus brightness with soft orange aroma, tender crumb,
+        and a clean finish that feels both light and comforting.
+      </p>
+    </header>
+
+    <section class="detail-grid">
+      <div class="card detail-media">
+        <img src="assets/OrangeZestCake.jpg" alt="Orange zest cake on a plate">
+      </div>
+
+      <aside class="card detail-aside" aria-label="Ingredients and info">
+        <h2 class="aside-title">Ingredients</h2>
+        <ul class="ingredients">
+          <li>1 1/2 cups flour</li>
+          <li>1 cup sugar</li>
+          <li>1/2 cup butter</li>
+          <li>2 eggs</li>
+          <li>1 tbsp orange zest</li>
+          <li>1/4 cup orange juice</li>
+          <li>1 tsp baking powder</li>
+          <li>1 tsp vanilla extract</li>
+          <li>Pinch of salt</li>
+        </ul>
+
+        <div class="aside-meta">
+          <div><strong>Prep:</strong> 20 min</div>
+          <div><strong>Cook:</strong> 35 min</div>
+          <div><strong>Difficulty:</strong> Medium</div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="card steps" aria-label="Recipe steps">
+      <h2>Steps</h2>
+      <ol class="step-list">
+        <li class="step">
+          <span class="step-num">01</span>
+          <div>
+            <h3>Prepare the batter</h3>
+            <p>Mix the flour, baking powder, and salt in one bowl while creaming butter and sugar in another.</p>
+          </div>
+        </li>
+
+        <li class="step">
+          <span class="step-num">02</span>
+          <div>
+            <h3>Add the citrus</h3>
+            <p>Beat in the eggs, orange zest, orange juice, and vanilla until smooth and fragrant.</p>
+          </div>
+        </li>
+
+        <li class="step">
+          <span class="step-num">03</span>
+          <div>
+            <h3>Bake and cool</h3>
+            <p>Fold in the dry ingredients, pour into a prepared pan, and bake until golden before cooling fully.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="card reco" aria-label="Recommendation engine">
+      <div class="reco-head">
+        <div>
+          <div class="kicker">Recommended next meal!</div>
+          <h2>Suggested next recipe</h2>
+          <p class="muted">Based on your preferences and dietary needs.</p>
+        </div>
+
+        <a class="btn secondary" href="recipes.html">Browse More</a>
+      </div>
+
+      <article class="reco-card">
+        <div class="reco-thumb" aria-hidden="true"></div>
+
+        <div class="reco-body">
+          <h3>Green Herb Salad</h3>
+
+          <div class="confidence">
+            <div class="confidence-row">
+              <span>Confidence</span>
+              <span>99%</span>
+            </div>
+
+            <div class="bar" role="img" aria-label="Confidence bar at 84 percent">
+              <div class="bar-fill" style="width: 84%;"></div>
+            </div>
+          </div>
+
+          <details class="why">
+            <summary>Why this match?</summary>
+            <ul>
+              <li>Both recipes feature fresh, vibrant ingredients</li>
+              <li>The flavor profile stays bright and clean</li>
+              <li>Creates a cohesive savory-to-fresh progression</li>
+            </ul>
+          </details>
+
+          <a class="btn" href="details_ghs.html">View Recipe →</a>
+        </div>
+      </article>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">© 2026 MellowFood</div>
+</footer>
+
+</body>
+</html>
