@@ -196,11 +196,11 @@ img{ max-width: 100%; display: block; }
   border-color: #d7d2c9;
 }
 
-#flavor-all:checked + .chip,
-#flavor-garlic:checked + .chip,
-#flavor-herb:checked + .chip,
-#flavor-spice:checked + .chip,
-#flavor-citrus:checked + .chip{
+#flavor-all:checked ~ .filter .chip[for="flavor-all"],
+#flavor-garlic:checked ~ .filter .chip[for="flavor-garlic"],
+#flavor-herb:checked ~ .filter .chip[for="flavor-herb"],
+#flavor-spice:checked ~ .filter .chip[for="flavor-spice"],
+#flavor-citrus:checked ~ .filter .chip[for="flavor-citrus"]{
   background: var(--ink);
   color: #fff;
   border-color: var(--ink);

@@ -36,26 +36,24 @@
       </p>
     </header>
 
-    <section class="filter card" aria-label="Flavor filter">
-      <div class="filter-row">
-        <span class="filter-label">Filter:</span>
+    <section class="recipe-browser">
+      <input class="filter-input" type="radio" name="flavor" id="flavor-all" checked>
+      <input class="filter-input" type="radio" name="flavor" id="flavor-garlic">
+      <input class="filter-input" type="radio" name="flavor" id="flavor-herb">
+      <input class="filter-input" type="radio" name="flavor" id="flavor-spice">
+      <input class="filter-input" type="radio" name="flavor" id="flavor-citrus">
 
-        <input class="filter-input" type="radio" name="flavor" id="flavor-all" checked>
-        <label class="chip" for="flavor-all">All</label>
+      <section class="filter card" aria-label="Flavor filter">
+        <div class="filter-row">
+          <span class="filter-label">Filter:</span>
 
-        <input class="filter-input" type="radio" name="flavor" id="flavor-garlic">
-        <label class="chip" for="flavor-garlic">Garlic</label>
-
-        <input class="filter-input" type="radio" name="flavor" id="flavor-herb">
-        <label class="chip" for="flavor-herb">Herbs</label>
-
-        <input class="filter-input" type="radio" name="flavor" id="flavor-spice">
-        <label class="chip" for="flavor-spice">Spice</label>
-
-        <input class="filter-input" type="radio" name="flavor" id="flavor-citrus">
-        <label class="chip" for="flavor-citrus">Citrus</label>
-      </div>
-    </section>
+          <label class="chip" for="flavor-all">All</label>
+          <label class="chip" for="flavor-garlic">Garlic</label>
+          <label class="chip" for="flavor-herb">Herbs</label>
+          <label class="chip" for="flavor-spice">Spice</label>
+          <label class="chip" for="flavor-citrus">Citrus</label>
+        </div>
+      </section>
 
     <section class="recipes-grid" aria-label="Recipe cards">
       <article class="card recipe-card flavor-garlic">
