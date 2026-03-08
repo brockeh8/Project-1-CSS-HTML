@@ -22,19 +22,123 @@
       <a href="flavors.html">Flavors</a>
     </nav>
 
-    <a class="btn secondary" href="recipes.html">Back</a>
+    <a class="btn secondary" href="recipes.html">Back to Recipes</a>
   </div>
 </header>
 
-<main>
-  <section class="section">
-    <div class="container card" style="padding:24px;">
-      <div class="kicker">placeholder</div>
-      <h1 style="margin:10px 0 8px;">Details</h1>
-      <p style="margin:0; color: var(--muted);">Intro</p>
-    </div>
-  </section>
+<main class="section">
+  <div class="container">
+    <header class="detail-head">
+      <div class="kicker">recipe page</div>
+      <h1 class="detail-title">Roasted Garlic Pasta</h1>
+
+      <div class="detail-tags">
+        <span class="tag">Garlic</span>
+        <span class="tag ghost">Main</span>
+        <span class="tag ghost">30–40 min</span>
+      </div>
+
+      <p class="detail-story">
+        This dish is built on mellow roasted garlic—soft, sweet, and savory—then lifted
+        with herbs and a touch of citrus.
+      </p>
+    </header>
+
+    <section class="detail-grid">
+      <div class="card detail-media" aria-hidden="true"></div>
+
+      <aside class="card detail-aside" aria-label="Ingredients and info">
+        <h2 class="aside-title">Ingredients</h2>
+        <ul class="ingredients">
+          <li>8 oz pasta</li>
+          <li>1 head garlic</li>
+          <li>2 tbsp olive oil</li>
+          <li>1/2 cup cream</li>
+          <li>Salt and pepper</li>
+          <li>Parsley or basil</li>
+          <li>Lemon zest (optional)</li>
+        </ul>
+
+        <div class="aside-meta">
+          <div><strong>Prep:</strong> 15 min</div>
+          <div><strong>Cook:</strong> 20 min</div>
+          <div><strong>Difficulty:</strong> Medium</div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="card steps" aria-label="Recipe steps">
+      <h2>Steps</h2>
+      <ol class="step-list">
+        <li class="step">
+          <span class="step-num">01</span>
+          <div>
+            <h3>Roast the garlic</h3>
+            <p>Slice the top off the garlic, drizzle with oil, wrap, and roast until soft.</p>
+          </div>
+        </li>
+
+        <li class="step">
+          <span class="step-num">02</span>
+          <div>
+            <h3>Build the sauce</h3>
+            <p>Squeeze the garlic into a pan, mash it, then stir in cream and seasoning.</p>
+          </div>
+        </li>
+
+        <li class="step">
+          <span class="step-num">03</span>
+          <div>
+            <h3>Toss and finish</h3>
+            <p>Toss pasta in the sauce and finish with herbs and lemon zest if desired.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+  </div>
 </main>
+
+<section class="card reco" aria-label="Recommendation engine">
+  <div class="reco-head">
+    <div>
+      <div class="kicker">recommendation engine ui</div>
+      <h2>Suggested next recipe</h2>
+      <p class="muted">Simulated smart guidance using only HTML and CSS.</p>
+    </div>
+
+    <a class="btn secondary" href="recipes.html">Browse More</a>
+  </div>
+
+  <article class="reco-card">
+    <div class="reco-thumb" aria-hidden="true"></div>
+
+    <div class="reco-body">
+      <h3>Herb Lemon Chicken</h3>
+
+      <div class="confidence">
+        <div class="confidence-row">
+          <span>Confidence</span>
+          <span>87%</span>
+        </div>
+
+        <div class="bar" role="img" aria-label="Confidence bar at 87 percent">
+          <div class="bar-fill" style="width: 87%;"></div>
+        </div>
+      </div>
+
+      <details class="why">
+        <summary>Why this match?</summary>
+        <ul>
+          <li>Shared base of garlic and herb aromatics</li>
+          <li>Citrus finish balances richness</li>
+          <li>Similar cozy but bright flavor profile</li>
+        </ul>
+      </details>
+
+      <a class="btn" href="details.html">View Recipe →</a>
+    </div>
+  </article>
+</section>
 
 <footer class="site-footer">
   <div class="container">© 2026 MellowFood</div>
