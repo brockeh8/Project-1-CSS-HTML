@@ -259,3 +259,26 @@ img{ max-width: 100%; display: block; }
   border-color: var(--line);
   color: var(--muted);
 }
+
+#flavor-garlic:checked ~ .recipes-grid .recipe-card:not(.flavor-garlic),
+#flavor-herb:checked ~ .recipes-grid .recipe-card:not(.flavor-herb),
+#flavor-spice:checked ~ .recipes-grid .recipe-card:not(.flavor-spice),
+#flavor-citrus:checked ~ .recipes-grid .recipe-card:not(.flavor-citrus){
+  display: none;
+}
+
+@media (max-width: 900px){
+  .recipes-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .page-title{
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 520px){
+  .recipes-grid{
+    grid-template-columns: 1fr;
+  }
+}
