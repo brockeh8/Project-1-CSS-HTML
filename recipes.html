@@ -18,7 +18,6 @@
     <nav class="nav-links" aria-label="Primary">
       <a href="index.html">Home</a>
       <a href="recipes.html" aria-current="page">Recipes</a>
-      <a href="details.html">Details</a>
       <a href="flavors.html">Flavors</a>
     </nav>
 
@@ -36,30 +35,28 @@
       </p>
     </header>
 
-    <section class="filter card" aria-label="Flavor filter">
-      <div class="filter-row">
-        <span class="filter-label">Filter:</span>
+    <section class="recipe-browser">
+      <input class="filter-input" type="radio" name="flavor" id="flavor-all" checked>
+      <input class="filter-input" type="radio" name="flavor" id="flavor-garlic">
+      <input class="filter-input" type="radio" name="flavor" id="flavor-herb">
+      <input class="filter-input" type="radio" name="flavor" id="flavor-spice">
+      <input class="filter-input" type="radio" name="flavor" id="flavor-citrus">
 
-        <input class="filter-input" type="radio" name="flavor" id="flavor-all" checked>
-        <label class="chip" for="flavor-all">All</label>
+      <section class="filter card" aria-label="Flavor filter">
+        <div class="filter-row">
+          <span class="filter-label">Filter:</span>
 
-        <input class="filter-input" type="radio" name="flavor" id="flavor-garlic">
-        <label class="chip" for="flavor-garlic">Garlic</label>
-
-        <input class="filter-input" type="radio" name="flavor" id="flavor-herb">
-        <label class="chip" for="flavor-herb">Herbs</label>
-
-        <input class="filter-input" type="radio" name="flavor" id="flavor-spice">
-        <label class="chip" for="flavor-spice">Spice</label>
-
-        <input class="filter-input" type="radio" name="flavor" id="flavor-citrus">
-        <label class="chip" for="flavor-citrus">Citrus</label>
-      </div>
-    </section>
+          <label class="chip" for="flavor-all">All</label>
+          <label class="chip" for="flavor-garlic">Garlic</label>
+          <label class="chip" for="flavor-herb">Herbs</label>
+          <label class="chip" for="flavor-spice">Spice</label>
+          <label class="chip" for="flavor-citrus">Citrus</label>
+        </div>
+      </section>
 
     <section class="recipes-grid" aria-label="Recipe cards">
       <article class="card recipe-card flavor-garlic">
-        <a class="recipe-link" href="details.html">
+        <a class="recipe-link" href="details_rgp.html">
           <div class="recipe-media" aria-hidden="true"></div>
           <div class="recipe-body">
             <h2>Roasted Garlic Pasta</h2>
@@ -73,7 +70,7 @@
       </article>
 
       <article class="card recipe-card flavor-garlic">
-        <a class="recipe-link" href="details.html">
+        <a class="recipe-link" href="details_gbs.html">
           <div class="recipe-media" aria-hidden="true"></div>
           <div class="recipe-body">
             <h2>Garlic Butter Shrimp</h2>
@@ -87,7 +84,7 @@
       </article>
 
       <article class="card recipe-card flavor-herb">
-        <a class="recipe-link" href="details.html">
+        <a class="recipe-link" href="details_hlc.html">
           <div class="recipe-media" aria-hidden="true"></div>
           <div class="recipe-body">
             <h2>Herb Lemon Chicken</h2>
@@ -101,7 +98,7 @@
       </article>
 
       <article class="card recipe-card flavor-herb">
-        <a class="recipe-link" href="details.html">
+        <a class="recipe-link" href="details_ghs.html">
           <div class="recipe-media" aria-hidden="true"></div>
           <div class="recipe-body">
             <h2>Green Herb Salad</h2>
@@ -114,22 +111,9 @@
         </a>
       </article>
 
-      <article class="card recipe-card flavor-spice">
-        <a class="recipe-link" href="details.html">
-          <div class="recipe-media" aria-hidden="true"></div>
-          <div class="recipe-body">
-            <h2>Smoky Paprika Bowl</h2>
-            <p>Warm spice, soft heat, and smoky depth.</p>
-            <div class="tag-row">
-              <span class="tag">Spice</span>
-              <span class="tag ghost">Main</span>
-            </div>
-          </div>
-        </a>
-      </article>
 
       <article class="card recipe-card flavor-spice">
-        <a class="recipe-link" href="details.html">
+        <a class="recipe-link" href="details_chc.html">
           <div class="recipe-media" aria-hidden="true"></div>
           <div class="recipe-body">
             <h2>Chili Honey Carrots</h2>
@@ -143,7 +127,7 @@
       </article>
 
       <article class="card recipe-card flavor-citrus">
-        <a class="recipe-link" href="details.html">
+        <a class="recipe-link" href="details_ozc.html">
           <div class="recipe-media" aria-hidden="true"></div>
           <div class="recipe-body">
             <h2>Orange Zest Cake</h2>
@@ -156,19 +140,6 @@
         </a>
       </article>
 
-      <article class="card recipe-card flavor-citrus">
-        <a class="recipe-link" href="details.html">
-          <div class="recipe-media" aria-hidden="true"></div>
-          <div class="recipe-body">
-            <h2>Lemon Pepper Salmon</h2>
-            <p>Zesty, peppery, and clean on the finish.</p>
-            <div class="tag-row">
-              <span class="tag">Citrus</span>
-              <span class="tag ghost">Main</span>
-            </div>
-          </div>
-        </a>
-      </article>
     </section>
   </div>
 </main>
