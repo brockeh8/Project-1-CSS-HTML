@@ -26,14 +26,151 @@
   </div>
 </header>
 
-<main>
-  <section class="section">
-    <div class="container card" style="padding:24px;">
-      <div class="kicker">placeholder</div>
-      <h1 style="margin:10px 0 8px;">Recipes</h1>
-      <p style="margin:0; color: var(--muted);">Stage 2 placeholder.</p>
-    </div>
-  </section>
+<main class="section">
+  <div class="container">
+    <header class="page-head">
+      <div class="kicker">recipe index</div>
+      <h1 class="page-title">All recipes</h1>
+      <p class="page-subtitle">
+        Browse recipe-book style cards organized by seasoning profile.
+      </p>
+    </header>
+
+    <section class="filter card" aria-label="Flavor filter">
+      <div class="filter-row">
+        <span class="filter-label">Filter:</span>
+
+        <input class="filter-input" type="radio" name="flavor" id="flavor-all" checked>
+        <label class="chip" for="flavor-all">All</label>
+
+        <input class="filter-input" type="radio" name="flavor" id="flavor-garlic">
+        <label class="chip" for="flavor-garlic">Garlic</label>
+
+        <input class="filter-input" type="radio" name="flavor" id="flavor-herb">
+        <label class="chip" for="flavor-herb">Herbs</label>
+
+        <input class="filter-input" type="radio" name="flavor" id="flavor-spice">
+        <label class="chip" for="flavor-spice">Spice</label>
+
+        <input class="filter-input" type="radio" name="flavor" id="flavor-citrus">
+        <label class="chip" for="flavor-citrus">Citrus</label>
+      </div>
+    </section>
+
+    <section class="recipes-grid" aria-label="Recipe cards">
+      <article class="card recipe-card flavor-garlic">
+        <a class="recipe-link" href="details.html">
+          <div class="recipe-media" aria-hidden="true"></div>
+          <div class="recipe-body">
+            <h2>Roasted Garlic Pasta</h2>
+            <p>Cozy, creamy, and mellow with a bright finish.</p>
+            <div class="tag-row">
+              <span class="tag">Garlic</span>
+              <span class="tag ghost">Main</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="card recipe-card flavor-garlic">
+        <a class="recipe-link" href="details.html">
+          <div class="recipe-media" aria-hidden="true"></div>
+          <div class="recipe-body">
+            <h2>Garlic Butter Shrimp</h2>
+            <p>Quick skillet bite with deep savory aroma.</p>
+            <div class="tag-row">
+              <span class="tag">Garlic</span>
+              <span class="tag ghost">Appetizer</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="card recipe-card flavor-herb">
+        <a class="recipe-link" href="details.html">
+          <div class="recipe-media" aria-hidden="true"></div>
+          <div class="recipe-body">
+            <h2>Herb Lemon Chicken</h2>
+            <p>Fresh herbs and citrus for a clean finish.</p>
+            <div class="tag-row">
+              <span class="tag">Herbs</span>
+              <span class="tag ghost">Main</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="card recipe-card flavor-herb">
+        <a class="recipe-link" href="details.html">
+          <div class="recipe-media" aria-hidden="true"></div>
+          <div class="recipe-body">
+            <h2>Green Herb Salad</h2>
+            <p>Light, crisp, and dressed with herb oil.</p>
+            <div class="tag-row">
+              <span class="tag">Herbs</span>
+              <span class="tag ghost">Appetizer</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="card recipe-card flavor-spice">
+        <a class="recipe-link" href="details.html">
+          <div class="recipe-media" aria-hidden="true"></div>
+          <div class="recipe-body">
+            <h2>Smoky Paprika Bowl</h2>
+            <p>Warm spice, soft heat, and smoky depth.</p>
+            <div class="tag-row">
+              <span class="tag">Spice</span>
+              <span class="tag ghost">Main</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="card recipe-card flavor-spice">
+        <a class="recipe-link" href="details.html">
+          <div class="recipe-media" aria-hidden="true"></div>
+          <div class="recipe-body">
+            <h2>Chili Honey Carrots</h2>
+            <p>Sweet heat glaze with a gentle kick.</p>
+            <div class="tag-row">
+              <span class="tag">Spice</span>
+              <span class="tag ghost">Side</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="card recipe-card flavor-citrus">
+        <a class="recipe-link" href="details.html">
+          <div class="recipe-media" aria-hidden="true"></div>
+          <div class="recipe-body">
+            <h2>Orange Zest Cake</h2>
+            <p>Bright citrus notes with a soft crumb.</p>
+            <div class="tag-row">
+              <span class="tag">Citrus</span>
+              <span class="tag ghost">Dessert</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article class="card recipe-card flavor-citrus">
+        <a class="recipe-link" href="details.html">
+          <div class="recipe-media" aria-hidden="true"></div>
+          <div class="recipe-body">
+            <h2>Lemon Pepper Salmon</h2>
+            <p>Zesty, peppery, and clean on the finish.</p>
+            <div class="tag-row">
+              <span class="tag">Citrus</span>
+              <span class="tag ghost">Main</span>
+            </div>
+          </div>
+        </a>
+      </article>
+    </section>
+  </div>
 </main>
 
 <footer class="site-footer">
