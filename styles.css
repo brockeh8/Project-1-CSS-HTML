@@ -203,3 +203,59 @@ img{ max-width: 100%; display: block; }
   color: #fff;
   border-color: var(--ink);
 }
+
+.recipes-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.recipe-card{
+  overflow: hidden;
+}
+
+.recipe-link{
+  display: block;
+  height: 100%;
+}
+
+.recipe-media{
+  height: 170px;
+  background: linear-gradient(135deg, #e7e2d9, #f6f1e9);
+  border-bottom: 1px solid var(--line);
+}
+
+.recipe-body{
+  padding: 16px;
+}
+
+.recipe-body h2{
+  margin: 0 0 6px;
+  font-size: 18px;
+}
+
+.recipe-body p{
+  margin: 0 0 12px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.tag-row{
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tag{
+  display: inline-flex;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--ink);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.tag.ghost{
+  border-color: var(--line);
+  color: var(--muted);
+}
