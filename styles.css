@@ -153,3 +153,25 @@ img{ max-width: 100%; display: block; }
   margin: 0;
   color: var(--muted);
 }
+
+.filter{
+  padding: 14px 16px;
+  margin: 18px 0 22px;
+}
+
+.filter-row{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.filter-label{
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.filter-input{
+  position: absolute;
+  left: -9999px;
+}
