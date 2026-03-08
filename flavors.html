@@ -3,14 +3,116 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MellowFood | Flavor Guide</title>
+  <title>MellowFood | Flavors</title>
   <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-  <main class="container" style="padding:40px 24px;">
-    <h1>Flavor Guide</h1>
-    <p>Coming soon.</p>
-    <a href="index.html">Back home</a>
-  </main>
+
+<header class="site-header">
+  <div class="container navbar">
+    <a class="brand" href="index.html" aria-label="MellowFood home">
+      <div class="brand-mark">MF</div>
+      <span>MellowFood</span>
+    </a>
+
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="recipes.html">Recipes</a>
+      <a href="details.html">Details</a>
+      <a href="flavors.html" aria-current="page">Flavors</a>
+    </nav>
+
+    <a class="btn secondary" href="recipes.html">Browse</a>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <header class="guide-head">
+      <div class="kicker">story pack</div>
+      <h1 class="guide-title">The art of seasoning</h1>
+      <p class="guide-subtitle">
+        A recipe-book style guide to building flavor through depth, brightness, warmth, and balance.
+      </p>
+    </header>
+
+    <section class="guide-stack" aria-label="Flavor guide sections">
+      <article class="card guide-block">
+        <div class="guide-media" aria-hidden="true"></div>
+        <div class="guide-copy">
+          <h2>Garlic: depth and sweetness</h2>
+          <p>
+            Roasted garlic softens sharpness into something mellow, savory, and comforting.
+            It often acts as the base note in a dish.
+          </p>
+          <div class="tag-row">
+            <span class="tag">Garlic</span>
+            <span class="tag ghost">Base flavor</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="card guide-block">
+        <div class="guide-media" aria-hidden="true"></div>
+        <div class="guide-copy">
+          <h2>Herbs: lift and freshness</h2>
+          <p>
+            Herbs brighten rich dishes and create a cleaner finish.
+            They help balance heavier flavors.
+          </p>
+          <div class="tag-row">
+            <span class="tag">Herbs</span>
+            <span class="tag ghost">Finish</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="card guide-block">
+        <div class="guide-media" aria-hidden="true"></div>
+        <div class="guide-copy">
+          <h2>Spice: warmth and character</h2>
+          <p>
+            Spice blends bring identity to a dish, whether that means smoky warmth,
+            bold aroma, or a stronger heat level.
+          </p>
+          <div class="tag-row">
+            <span class="tag">Spice</span>
+            <span class="tag ghost">Signature</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="card guide-block">
+        <div class="guide-media" aria-hidden="true"></div>
+        <div class="guide-copy">
+          <h2>Citrus: brightness and balance</h2>
+          <p>
+            Citrus adds acidity, aroma, and energy. A final squeeze or zest can sharpen
+            and lighten the entire flavor profile.
+          </p>
+          <div class="tag-row">
+            <span class="tag">Citrus</span>
+            <span class="tag ghost">Balance</span>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="card guide-cta" aria-label="Call to action">
+      <div>
+        <div class="kicker">ready to cook?</div>
+        <h2>Find a recipe by flavor</h2>
+        <p class="muted">Browse the recipe list and choose your seasoning profile.</p>
+      </div>
+
+      <a class="btn" href="recipes.html">Browse Recipes →</a>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">© 2026 MellowFood</div>
+</footer>
+
 </body>
 </html>
