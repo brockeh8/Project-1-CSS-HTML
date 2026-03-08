@@ -283,6 +283,8 @@ img{ max-width: 100%; display: block; }
   .recipes-grid{
     grid-template-columns: 1fr;
   }
+}
+
 /*Hero Grid*/
 .hero-grid{
   display:grid;
