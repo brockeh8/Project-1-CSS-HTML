@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MellowFood | Herb Lemon Chicken</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container navbar">
+    <a class="brand" href="index.html" aria-label="MellowFood home">
+      <div class="brand-mark">MF</div>
+      <span>MellowFood</span>
+    </a>
+
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="recipes.html">Recipes</a>
+      <a href="details.html" aria-current="page">Details</a>
+      <a href="flavors.html">Flavors</a>
+    </nav>
+
+    <a class="btn secondary" href="recipes.html">Back to Recipes</a>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <header class="detail-head">
+      <div class="kicker">recipe page</div>
+      <h1 class="detail-title">Herb Lemon Chicken</h1>
+
+      <div class="detail-tags">
+        <span class="tag">Herbs</span>
+        <span class="tag ghost">Main</span>
+        <span class="tag ghost">40 min</span>
+      </div>
+
+      <p class="detail-story">
+        This dish combines fresh herbs, citrus, and savory depth for a balanced main course
+        that feels bright, grounded, and easy to pair.
+      </p>
+    </header>
+
+    <section class="detail-grid">
+      <div class="card detail-media">
+        <img src="assets/HerbLemonChicken.png" alt="Herb lemon chicken on a plate">
+      </div>
+
+      <aside class="card detail-aside" aria-label="Ingredients and info">
+        <h2 class="aside-title">Ingredients</h2>
+        <ul class="ingredients">
+          <li>2 chicken breasts</li>
+          <li>2 tbsp olive oil</li>
+          <li>1 lemon</li>
+          <li>2 garlic cloves</li>
+          <li>1 tbsp parsley</li>
+          <li>1 tsp thyme</li>
+          <li>1 tsp rosemary</li>
+          <li>Salt and black pepper</li>
+        </ul>
+
+        <div class="aside-meta">
+          <div><strong>Prep:</strong> 15 min</div>
+          <div><strong>Cook:</strong> 25 min</div>
+          <div><strong>Difficulty:</strong> Medium</div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="card steps" aria-label="Recipe steps">
+      <h2>Steps</h2>
+      <ol class="step-list">
+        <li class="step">
+          <span class="step-num">01</span>
+          <div>
+            <h3>Season the chicken</h3>
+            <p>Coat the chicken with olive oil, garlic, herbs, lemon zest, salt, and pepper.</p>
+          </div>
+        </li>
+
+        <li class="step">
+          <span class="step-num">02</span>
+          <div>
+            <h3>Sear and cook</h3>
+            <p>Sear the chicken in a hot pan until golden, then continue cooking until fully done.</p>
+          </div>
+        </li>
+
+        <li class="step">
+          <span class="step-num">03</span>
+          <div>
+            <h3>Finish with lemon</h3>
+            <p>Add fresh lemon juice at the end and let the chicken rest briefly before serving.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="card reco" aria-label="Recommendation engine">
+      <div class="reco-head">
+        <div>
+          <div class="kicker">Recommended next meal!</div>
+          <h2>Suggested next recipe</h2>
+          <p class="muted">Based on your preferences and dietary needs.</p>
+        </div>
+
+        <a class="btn secondary" href="recipes.html">Browse More</a>
+      </div>
+
+      <article class="reco-card">
+        <div class="reco-thumb">
+            <img src="assets/HerbSalad.jpg" alt="Green herb salad in a bowl">
+        </div>
+
+        <div class="reco-body">
+          <h3>Green Herb Salad</h3>
+
+          <div class="confidence">
+            <div class="confidence-row">
+              <span>Confidence</span>
+              <span>89%</span>
+            </div>
+
+            <div class="bar" role="img" aria-label="Confidence bar at 89 percent">
+              <div class="bar-fill" style="width: 89%;"></div>
+            </div>
+          </div>
+
+          <details class="why">
+            <summary>Why this match?</summary>
+            <ul>
+              <li>Both recipes highlight fresh herbs</li>
+              <li>The salad complements the chicken without overpowering it</li>
+              <li>Creates a clean and cohesive meal pairing</li>
+            </ul>
+          </details>
+
+          <a class="btn" href="details_ghs.html">View Recipe →</a>
+        </div>
+      </article>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">© 2026 MellowFood</div>
+</footer>
+
+</body>
+</html>
