@@ -294,3 +294,100 @@ img{ max-width: 100%; display: block; }
     grid-template-columns: 1fr;
   }
 }
+
+/* ===== Stage 6B: Recommendation engine UI ===== */
+.reco{
+  padding: 18px;
+}
+
+.reco-head{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.muted{
+  color: var(--muted);
+  margin: 6px 0 0;
+}
+
+.reco-card{
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: #fff;
+}
+
+.reco-thumb{
+  min-height: 220px;
+  background: linear-gradient(135deg, #dcd6cc, #f6f1e9);
+}
+
+.reco-body{
+  padding: 16px;
+}
+
+.reco-body h3{
+  margin: 0 0 10px;
+}
+
+.confidence{
+  margin: 10px 0 12px;
+}
+
+.confidence-row{
+  display: flex;
+  justify-content: space-between;
+  color: var(--muted);
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.bar{
+  height: 10px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: #fbfaf7;
+  overflow: hidden;
+}
+
+.bar-fill{
+  height: 100%;
+  background: var(--ink);
+  border-radius: 999px;
+}
+
+.why summary{
+  cursor: pointer;
+  font-weight: 800;
+  color: var(--ink);
+  margin: 0 0 8px;
+}
+
+.why ul{
+  margin: 8px 0 12px;
+  padding-left: 18px;
+  color: var(--muted);
+}
+
+.why li{
+  margin: 6px 0;
+}
+
+@media (max-width: 900px){
+  .reco-card{
+    grid-template-columns: 1fr;
+  }
+
+  .reco-thumb{
+    min-height: 180px;
+  }
+}
